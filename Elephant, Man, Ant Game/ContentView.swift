@@ -37,7 +37,10 @@ struct ContentView: View {
                 //Player
                 VStack {
                     Text("Make your Selection:")
+                        .font(Font.custom("Baskerville-Bold", size:35))
                         .font(.largeTitle)
+                        
+                    
                         .foregroundColor(.black.opacity (0.80))
                         .padding()
                     HStack(spacing:0){
@@ -58,14 +61,15 @@ struct ContentView: View {
                                 Text(option.rawValue)}
                             .font(.system(size: geo.size.width/CGFloat(Choices.allCases.count)))
                         }
-                        
                     }
                 }
                 HStack {
                     Spacer()
                     Text("Wins: \(wins)")
+                    .font(Font.custom("Baskerville-Bold", size:20))
                     Spacer()
                     Text("Round: \(round)")
+                    .font(Font.custom("Baskerville-Bold", size:20))
                     Spacer()
                     
                 }
