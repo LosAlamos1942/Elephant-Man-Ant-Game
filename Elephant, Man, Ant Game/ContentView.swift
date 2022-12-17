@@ -13,14 +13,12 @@ enum Choices: String, CaseIterable {
 
 struct ContentView: View {
     
-    @State var computerChoice = Choices.allCases.first!
-    @State var gameOutcome = ""
-    
-    @State var wins = 0
-    @State var round = 0
-    
-    @State var showAlert = false
-    @State var showComputerChoice = false
+    @State private var computerChoice = Choices.allCases.first!
+    @State private var gameOutcome = ""
+    @State private var wins = 0
+    @State private var round = 0
+    @State private var showAlert = false
+    @State private var showComputerChoice = false
     
     
     var body: some View {
@@ -39,7 +37,8 @@ struct ContentView: View {
                 //Player
                 VStack {
                     Text("Make your Selection:")
-                        .font(.title)
+                        .font(.largeTitle)
+                        .foregroundColor(.black.opacity (0.80))
                         .padding()
                     HStack(spacing:0){
                         ForEach(Choices.allCases, id:\.self){option in
@@ -75,6 +74,7 @@ struct ContentView: View {
         .alert("You \(gameOutcome)!", isPresented: $showAlert){
             Button("Play Again", role: .cancel){showComputerChoice = false}
         }
+        .background(.gray)
     }
     func checkWin(playerChoice:Choices){
         switch playerChoice {

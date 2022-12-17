@@ -11,7 +11,8 @@ import SwiftUI
 struct Elephant__Man__Ant_GameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }
+  
