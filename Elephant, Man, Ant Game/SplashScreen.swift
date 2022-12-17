@@ -19,13 +19,14 @@ struct SplashScreen: View {
             VStack {
                 VStack {
                     Text("Elephant, Man, Ant")
-                        .font(Font.custom("Baskerville-Bold", size: 26))
+                        .font(Font.custom("Baskerville-Bold", size: 40))
                         .foregroundColor(.black.opacity(0.80))
+                        .padding()
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
                 .onAppear {
-                    withAnimation(.easeIn(duration: 1.2)) {
+                    withAnimation(.easeIn(duration: 2.0)) {
                         self.size = 0.9
                         self.opacity = 1.0
                     }

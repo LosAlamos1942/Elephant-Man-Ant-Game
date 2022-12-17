@@ -36,12 +36,10 @@ struct ContentView: View {
                 }.frame(width: geo.size.width, height: geo.size.height/2)
                 //Player
                 VStack {
+                    
                     Text("Make your Selection:")
                         .font(Font.custom("Baskerville-Bold", size:35))
                         .font(.largeTitle)
-                        
-                    
-                        .foregroundColor(.black.opacity (0.80))
                         .padding()
                     HStack(spacing:0){
                         ForEach(Choices.allCases, id:\.self){option in
@@ -63,23 +61,25 @@ struct ContentView: View {
                         }
                     }
                 }
+                // Counts the number of wins you have and round that you are on
                 HStack {
                     Spacer()
                     Text("Wins: \(wins)")
-                    .font(Font.custom("Baskerville-Bold", size:20))
+                        .font(Font.custom("Baskerville-Bold", size:20))
                     Spacer()
                     Text("Round: \(round)")
-                    .font(Font.custom("Baskerville-Bold", size:20))
+                        .font(Font.custom("Baskerville-Bold", size:20))
                     Spacer()
-                    
                 }
             }.frame(width: geo.size.width, height: geo.size.height/2)
         }
+        // indicates if you win, lose or draw
         .alert("You \(gameOutcome)!", isPresented: $showAlert){
             Button("Play Again", role: .cancel){showComputerChoice = false}
         }
         .background(.gray)
     }
+    // This function checks who wins based on the player or computer choice. 
     func checkWin(playerChoice:Choices){
         switch playerChoice {
         case .Elephant:

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D2D9FBBB294CE38C0099C3FF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9FBBA294CE38C0099C3FF /* AboutView.swift */; };
 		D2D9FBBF294D69DD0099C3FF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D9FBBE294D69DD0099C3FF /* SplashScreen.swift */; };
 		D2FC3512294B78A300BFA1C1 /* Elephant__Man__Ant_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC3511294B78A300BFA1C1 /* Elephant__Man__Ant_GameApp.swift */; };
 		D2FC3514294B78A300BFA1C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FC3513294B78A300BFA1C1 /* ContentView.swift */; };
@@ -16,7 +15,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D2D9FBBA294CE38C0099C3FF /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		D2D9FBBE294D69DD0099C3FF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		D2FC350E294B78A300BFA1C1 /* Elephant, Man, Ant Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Elephant, Man, Ant Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FC3511294B78A300BFA1C1 /* Elephant__Man__Ant_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elephant__Man__Ant_GameApp.swift; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 				D2FC3511294B78A300BFA1C1 /* Elephant__Man__Ant_GameApp.swift */,
 				D2D9FBBE294D69DD0099C3FF /* SplashScreen.swift */,
 				D2FC3513294B78A300BFA1C1 /* ContentView.swift */,
-				D2D9FBBA294CE38C0099C3FF /* AboutView.swift */,
 				D2FC3515294B78A500BFA1C1 /* Assets.xcassets */,
 				D2FC3517294B78A500BFA1C1 /* Preview Content */,
 			);
@@ -145,7 +142,6 @@
 			files = (
 				D2D9FBBF294D69DD0099C3FF /* SplashScreen.swift in Sources */,
 				D2FC3514294B78A300BFA1C1 /* ContentView.swift in Sources */,
-				D2D9FBBB294CE38C0099C3FF /* AboutView.swift in Sources */,
 				D2FC3512294B78A300BFA1C1 /* Elephant__Man__Ant_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
